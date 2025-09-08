@@ -51,11 +51,36 @@ namespace LineProject
                 int a = 1;
                 int b = 2;
                 int c = 3;
+                int d = 4;
+                int e = 5;
+                int f = 6;
+                int g = 7;
+                int h = 8;
+                int j = 9;
+                int k = 0;
+                int l = 10;
+                int m = 11;
+                int n = 12;
+                int o = 13;
+                int p = 14;
+                int q = 15;
+                int r = 16;
+                int s = 17;
+                int t = 18;
+                int u = 19;
+                int v = 20;
+                int w = 21;
+                int x = 22;
+                int y = 23;
+                int z = 24;
 
                 string letter_a = a.ToString();
                 string letter_b = b.ToString();
                 string letter_c = c.ToString();
 
+
+
+                // Random number with async 
                 for (i = 0; i <= 9; i++)
                 {
                     if (a == 1 & i < 1)
