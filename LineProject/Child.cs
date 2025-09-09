@@ -7,17 +7,12 @@ namespace LineProject
         public static void Main()
         {
 
-            int choice = 3;
-            /*
-            Use 1, 2, or 3
-            I was going to add more but I don't know wjat I wanted to say
-            and commented multiple lines so this text is here to take up space
-            */
+            int choice = 0;
 
+            // Change use 1, 2, or 3 in int choice 
 
-            //Btw both take the same time to build
-            // Pretty cool
-
+            // Todo:
+            // Make choice 3 into a partial class
 
             #region Choice 1 and 2
 
@@ -50,6 +45,7 @@ namespace LineProject
 
             else if (choice == 3)
             {
+                // 683 with 26 unsed vars and including spaces
                 Random random = new Random();
                 int randomNumber = random.Next(1, 100);
 
@@ -183,8 +179,9 @@ namespace LineProject
 
                 string symbol_colon = ":";
                 string symbol_space = " ";
+                string symbol_period = ".";
+                string symbol_comma = ",";
                 string next_line = "\n";
-
 
                 bool space = false;
                 bool nextLine = false;
@@ -209,12 +206,36 @@ namespace LineProject
                 bool my = false;
                 bool basement = false;
 
+                //Be a good person
+                bool Be = false;
+                bool a_ = false;
+                bool good = false;
+                bool person = false;
 
+                // Password input
+                //bool password = false; // already declared
+
+                // Thanks for the password, it is {password3}
+                bool Thanks = false;
+                bool for_ = false;
+                //bool the = false; //Already declared
+                //bool password = false; //Already declared
+                bool comma = false;
+                bool it = false;
+                bool is_ = false;
+
+                // Your local ip is probably 192.168.1.1
+                bool Your = false;
+                bool local = false;
+                bool ip = false;
+                //bool is = false; //Already declared
+                bool probably = false;
+                bool ipaddress = false;
 
                 // Random number with async 
                 for (integer = 0; integer <= 7; integer++)
                 {
-                    #region You have the ability to save the children in my basement
+                    #region Please enter your password:
                     if (Please == false)
                     {
                         Console.Write(letter_p_upper);
@@ -289,10 +310,15 @@ namespace LineProject
                     Console.Write(next_line);
                     Console.Write(next_line);
                     nextLine = true;
+                    space = false;
+
+                    password = false; // reset for later use
+                    colon = false; // reset for later use
                 }
-                for (integer = 0; integer <= 13; integer++)
+
+                for (integer = 0; integer <= 18; integer++)
                 {
-                    //#region You have the ability to save the children in my basement
+                    #region You have the ability to save the children in my basement
                     if (You == false)
                     {
                         Console.Write(letter_y_upper);
@@ -331,6 +357,8 @@ namespace LineProject
                     {
                         Console.Write(symbol_space);
                         space = true;
+
+                        the = false; // reset for later use
                     }
                     else if (ability == false)
                     {
@@ -380,7 +408,7 @@ namespace LineProject
                         Console.Write(letter_t);
                         Console.Write(letter_h);
                         Console.Write(letter_e);
-                        the = true;
+                        the = true; // Second use
                         space = false;
                     }
                     else if (space == false)
@@ -388,25 +416,169 @@ namespace LineProject
                         Console.Write(symbol_space);
                         space = true;
                     }
-                    else if (You == false)
+                    else if (children == false)
                     {
-                        Console.Write(letter_y_upper);
-                        Console.Write(letter_o);
-                        Console.Write(letter_u);
-                        You = true;
+                        Console.Write(letter_c);
+                        Console.Write(letter_h);
+                        Console.Write(letter_i);
+                        Console.Write(letter_l);
+                        Console.Write(letter_d);
+                        Console.Write(letter_r);
+                        Console.Write(letter_e);
+                        Console.Write(letter_n);
+                        children = true;
+                        space = false;
                     }
                     else if (space == false)
                     {
                         Console.Write(symbol_space);
                         space = true;
                     }
-                    else if (have == false)
+                    else if (in_ == false)
                     {
-                        Console.Write(letter_h);
+                        Console.Write(letter_i);
+                        Console.Write(letter_n);
+                        in_ = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (my == false)
+                    {
+                        Console.Write(letter_m);
+                        Console.Write(letter_y);
+                        my = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (basement == false)
+                    {
+                        Console.Write(letter_b);
                         Console.Write(letter_a);
-                        Console.Write(letter_v);
+                        Console.Write(letter_s);
                         Console.Write(letter_e);
-                        have = true;
+                        Console.Write(letter_m);
+                        Console.Write(letter_e);
+                        Console.Write(letter_n);
+                        Console.Write(letter_t);
+                        basement = true;
+                    }
+                    else
+                    {
+                        nextLine = false;
+                        space = false;
+                    }
+                    #endregion
+                }
+
+                nextLine = false;
+
+                if (nextLine == false)
+                {
+                    Console.Write(next_line);
+                    nextLine = true;
+                    space = false;
+
+                    the = false; // reset for later use
+                }
+
+                for (integer = 0; integer <= 7; integer++)
+                {
+                    #region Be a good person
+                    if (Be == false)
+                    {
+                        Console.Write(letter_b_upper);
+                        Console.Write(letter_e);
+                        Be = true;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (a_ == false)
+                    {
+                        Console.Write(letter_a);
+                        a_ = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (good == false)
+                    {
+                        Console.Write(letter_g);
+                        Console.Write(letter_o);
+                        Console.Write(letter_o);
+                        Console.Write(letter_d);
+                        good = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (person == false)
+                    {
+                        Console.Write(letter_p);
+                        Console.Write(letter_e);
+                        Console.Write(letter_r);
+                        Console.Write(letter_s);
+                        Console.Write(letter_o);
+                        Console.Write(letter_n);
+                        person = true;
+                    }
+                    else
+                    {
+                        nextLine = false;
+                        space = false;
+                    }
+                    #endregion
+                }
+
+                nextLine = false;
+
+                if (nextLine == false)
+                {
+                    Console.Write(next_line);
+                    Console.Write(next_line);
+                    nextLine = true;
+                    space = false;
+                }
+
+                for (integer = 0; integer <= 11; integer++)
+                {
+                    #region Password input
+                    if (password == false)
+                    {
+                        Console.Write(letter_p_upper);
+                        Console.Write(letter_a);
+                        Console.Write(letter_s);
+                        Console.Write(letter_s);
+                        Console.Write(letter_w);
+                        Console.Write(letter_o);
+                        Console.Write(letter_r);
+                        Console.Write(letter_d);
+                        password = true;
+                    }
+                    else if (colon == false)
+                    {
+                        Console.Write(symbol_colon);
+                        colon = true;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
                         space = true;
                     }
                     else
@@ -414,7 +586,242 @@ namespace LineProject
                         nextLine = false;
                         space = false;
                     }
+                    #endregion
                 }
+
+                if (nextLine == false)
+                {
+                    Console.Write(next_line);
+                    nextLine = true;
+                    space = false;
+
+                    password = false; // reset for later use
+                }
+
+                string password3 = "";
+                password3 = Console.ReadLine();
+                // The pain no not do
+                // string password3 = Console.ReadLine();
+
+                nextLine = false;
+                Console.Write(next_line);
+
+                for (integer = 0; integer <= 13; integer++)
+                {
+                    #region Thanks for the password, it is {password3}
+                    if (Thanks == false)
+                    {
+                        Console.Write(letter_t_upper);
+                        Console.Write(letter_h);
+                        Console.Write(letter_a);
+                        Console.Write(letter_n);
+                        Console.Write(letter_k);
+                        Console.Write(letter_s);
+                        Thanks = true;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (for_ == false)
+                    {
+                        Console.Write(letter_f);
+                        Console.Write(letter_o);
+                        Console.Write(letter_r);
+                        for_ = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (the == false)
+                    {
+                        Console.Write(letter_t);
+                        Console.Write(letter_h);
+                        Console.Write(letter_e);
+                        the = true; // Third use
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (password == false)
+                    {
+                        Console.Write(letter_p);
+                        Console.Write(letter_a);
+                        Console.Write(letter_s);
+                        Console.Write(letter_s);
+                        Console.Write(letter_w);
+                        Console.Write(letter_o);
+                        Console.Write(letter_r);
+                        Console.Write(letter_d);
+                        password = true; // Third use
+                    }
+                    else if (comma == false)
+                    {
+                        Console.Write(symbol_comma);
+                        comma = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (it == false)
+                    {
+                        Console.Write(letter_i);
+                        Console.Write(letter_t);
+                        it = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (is_ == false)
+                    {
+                        Console.Write(letter_i);
+                        Console.Write(letter_s);
+                        is_ = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (password3 != null)
+                    {
+                        Console.Write(password3);
+
+                        /* Maybe later
+                         * 
+                        foreach (char character in password3)
+                        {
+                            
+                            Console.Write(password3);
+                        }
+                        */
+                    }
+                    else
+                    {
+                        nextLine = false;
+                        space = false;
+                    }
+                    #endregion
+                }
+
+                if (nextLine == false)
+                {
+                    Console.Write(next_line);
+                    nextLine = true;
+                    space = false;
+
+                    is_ = false; // reset for later use
+                }
+
+                for (integer = 0; integer <= 100; integer++)
+                {
+                    #region Your local ip is probably 192.168.1.1
+                    if (Your == false)
+                    {
+                        Console.Write(letter_y_upper);
+                        Console.Write(letter_o);
+                        Console.Write(letter_u);
+                        Console.Write(letter_r);
+                        Your = true;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (local == false)
+                    {
+                        Console.Write(letter_l);
+                        Console.Write(letter_o);
+                        Console.Write(letter_c);
+                        Console.Write(letter_a);
+                        Console.Write(letter_l);
+                        local = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (ip == false)
+                    {
+                        Console.Write(letter_i);
+                        Console.Write(letter_p);
+                        ip = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (is_ == false)
+                    {
+                        Console.Write(letter_i);
+                        Console.Write(letter_s);
+                        is_ = true; // Third use
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (probably == false)
+                    {
+                        Console.Write(letter_p);
+                        Console.Write(letter_r);
+                        Console.Write(letter_o);
+                        Console.Write(letter_b);
+                        Console.Write(letter_a);
+                        Console.Write(letter_b);
+                        Console.Write(letter_l);
+                        Console.Write(letter_y);
+                        probably = true;
+                        space = false;
+                    }
+                    else if (space == false)
+                    {
+                        Console.Write(symbol_space);
+                        space = true;
+                    }
+                    else if (ipaddress == false)
+                    {
+                        //192.168.1.1
+                        Console.Write(letter_a_value);
+                        Console.Write(letter_i_value);
+                        Console.Write(letter_b_value);
+                        Console.Write(symbol_period);
+                        Console.Write(letter_a_value);
+                        Console.Write(letter_f_value);
+                        Console.Write(letter_h_value);
+                        Console.Write(symbol_period);
+                        Console.Write(letter_a_value);
+                        Console.Write(symbol_period);
+                        Console.Write(letter_a_value);
+                        ipaddress = true;
+                    }
+                }
+                #endregion
+            }
+            else
+            {
+                Console.WriteLine("Change choice to 1, 2, or 3.");
             }
         }
     }
